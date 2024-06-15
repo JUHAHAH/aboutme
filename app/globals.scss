@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------- Local Fonts -------------------- */
+/* Galmuri */
+@import url('https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css');
+
+/* Pretendard */
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url('/font/PretendardVariable.woff2') format('woff2-variations');
+}
+/* NeoDunggeunmoPro */
+@font-face {
+  font-family: 'NeoDunggeunmoPro';
+  font-style: normal;
+  src: url('/font/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+}
+/* PFStardust */
+@font-face {
+  font-family: 'PFStardust';
+  font-style: normal;
+  src: url('/font/PFStardust.ttf') format('truetype');
+}
+/* Onesize */
+@font-face {
+  font-family: 'Onesize';
+  font-style: normal;
+  src: url('/font/Onesize.ttf') format('truetype');
+}
+/* Ramche */
+@font-face {
+  font-family: 'Ramche';
+  font-style: normal;
+  src: url('/font/Ramche.ttf') format('truetype');
+}
+
+:root {
+  line-height: 2rem;
+
+  /* -------------------- Custom Color -------------------- */
+  /* Primary */
+  --primary-color: hsl(272, 68%, 35%);
+  --primary-color-2: hsl(271, 67%, 27%);
+  --primary-color-3: hsl(266, 60%, 16%);
+  --primary-color-highlight: hsl(277, 93%, 51%);
+
+  /* Secondary */
+  --secondary-color: hsl(234, 10%, 40%);
+  --secondary-color-2: hsl(228, 8%, 63%);
+  --secondary-color-3: hsl(212, 13%, 81%);
+
+  /* Tetriary */
+  --tetriary-color: hsl(40, 86%, 55%);
+  --tetriary-color-2: hsl(35, 77%, 75%);
+  --tetriary-color-3: hsl(42, 71%, 78%);
+
+  /* Background */
+  --backgorund-color: hsl(240, 7%, 8%);
+
+  /* White */
+  --white: hsl(0, 0%, 100%);
+  /* Black */
+  --black: hsl(0, 0%, 0%);
+
+  /* Red */
+  --custom-red: hsl(349, 100%, 65%);
+  --custom-red-highlight: hsl(342, 97%, 41%);
+  /* Green */
+  --custom-green: hsl(76, 95%, 57%);
+  --custom-green-highlight: hsl(101, 80%, 43%);
+  /* Yellow */
+  --custom-yellow: hsl(51, 100%, 67%);
+  --custom-yellow-highlight: hsl(40, 94%, 59%);
+  /* Blue */
+  --custom-blue: hsl(180, 81%, 79%);
+  --custom-blue-highlight: hsl(184, 71%, 51%);
+}
+
+@layer base {
+  .first-gradient {
+    background: linear-gradient(
+      var(--primary-color-highlight) 0%,
+      var(--primary-color) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .second-gradient {
+    background: linear-gradient(
+      var(--secondary-color-3) 0%,
+      var(--secondary-color) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .third-gradient {
+    background: linear-gradient(
+      var(--tetriary-color-3) 0%,
+      var(--tetriary-color) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* -------------------- Color -------------------- */
+  .cred {
+    background: linear-gradient(
+      var(--custom-red) 0%,
+      var(--custom-red-highlight) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .cyellow {
+    background: linear-gradient(
+      var(--custom-yellow) 0%,
+      var(--custom-yellow-highlight) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .cgreen {
+    background: linear-gradient(
+      var(--custom-green) 0%,
+      var(--custom-green-highlight) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .cblue {
+    background: linear-gradient(
+      var(--custom-blue) 0%,
+      var(--custom-blue-highlight) 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .cwhite {
+    background: linear-gradient(var(--white) 0%, var(--secondary-color-3) 100%);
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* -------------------- Main -------------------- */
+  .main {
+    background: var(--backgorund-color);
+
+    color: var(--white);
+    font-family: 'Pretendard';
+    font-size: 2rem;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* -------------------- Scroll Bar -------------------- */
+  ::-webkit-scrollbar {
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    &:hover {
+      background-color: rgba($color: #ffffff, $alpha: 0.6);
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
