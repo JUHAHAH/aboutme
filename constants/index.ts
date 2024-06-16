@@ -14,7 +14,7 @@ const birth = getAge('27 Feb 1998 00:00:00 GMT') + '세';
 export const aboutMe = {
   bio: [
     { name: 'NAME', detail: '김주하' },
-    { name: 'BIRTH', detail: '1998 / 02 / 27 ' + birth },
+    { name: 'BIRTH', detail: '1998 / 02 / 27 ( ' + birth + ' )' },
     { name: 'MAIL', detail: 'juha0227@gmail.com' },
   ],
 

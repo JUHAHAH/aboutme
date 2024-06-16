@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { assetPrefix: '.' };
+const nextConfig = {};
 
 export default nextConfig;

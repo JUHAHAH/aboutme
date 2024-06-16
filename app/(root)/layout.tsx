@@ -8,13 +8,11 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <main>
-        <div></div>
-        <div className="flex justify-center">{children}</div>
-        <div></div>
+        <div className="flex w-full justify-center">{children}</div>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -5,16 +5,14 @@ import { Portrait } from './SplineViewer';
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="flex flex-col w-screen justify-center items-center">
       <div className="title">
         <CodeTyped />
       </div>
-
-      <div className="flex crt">
+      <div className="flex">
         <div>
           <Portrait />
         </div>
-
         <div>
           <div className="title-second">ABOUT ME</div>
           {aboutMe.bio.map((info) => {
@@ -27,7 +25,7 @@ const AboutMe = () => {
             );
           })}
           <div className="title-second">SKILLS</div>
-          <div className="title-third">FRONT</div>
+          <div className="title-third">FRONTEND</div>
           {aboutMe.skills.front.map((info) => {
             return (
               <div className="content">
@@ -37,7 +35,7 @@ const AboutMe = () => {
               </div>
             );
           })}
-          <div className="title-third">BACKEND</div>
+          <div className="title-third mt-4">BACKEND</div>
           {aboutMe.skills.back.map((info) => {
             return (
               <div className="content">

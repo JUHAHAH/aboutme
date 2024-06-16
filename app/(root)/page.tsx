@@ -8,7 +8,7 @@ const Home = () => {
       <div className="h-screen">
         <AboutMe />
       </div>
-      <div className="snap-start">
+      <div>
         <SplineViewer>dasd</SplineViewer>
       </div>
     </div>

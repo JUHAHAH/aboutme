@@ -5,15 +5,12 @@
 .title {
   @apply text-5xl animate-fade-right font-ndgm;
 }
-
 .title-second {
-  @apply text-5xl animate-fade-right font-onesize mt-4 animate-delay-[0.2s];
+  @apply text-5xl mt-4 animate-fade-right font-onesize animate-delay-[0.2s];
 }
-
 .title-third {
-  @apply text-4xl animate-fade-right font-ndgm animate-delay-[0.5s];
+  @apply text-4xl ml-4 animate-fade-right font-ndgm animate-delay-[0.5s];
 }
-
 .content {
   :first-child {
     @apply font-galmuri11 font-bold w-40 flex;
@@ -21,7 +18,7 @@
   :nth-child(2) {
     @apply font-galmuri11 font-bold mr-2;
   }
-  @apply text-lg animate-fade-right font-galmuri11 animate-delay-[0.8s] flex;
+  @apply text-lg ml-4 animate-fade-right font-galmuri11 animate-delay-[0.8s] flex;
 }
 
 @layer crt {

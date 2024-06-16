@@ -7,7 +7,7 @@ type AppLayoutProps = {
 
 export const Portrait = () => {
   return (
-    <div className="w-[500px] h-[500px]">
+    <div>
       <Spline scene="https://prod.spline.design/K4DB9Kg2XkwlerlE/scene.splinecode" />
     </div>
   );
@@ -15,12 +15,12 @@ export const Portrait = () => {
 
 const SplineViewer = ({ children }: AppLayoutProps) => {
   return (
-    <div className="h-screen">
-      <div className="">hahaha</div>
-
+    <div className="w-screen">
       <div className="">{children}</div>
-      <div className="absolute justify-center flex self-center w-full mt-[9.6rem]"></div>
-      <Spline scene="https://prod.spline.design/6pgQTKLMlpd6qqTy/scene.splinecode" />
+      <Spline
+        className="absolute flex justify-center top-0 -z-10 w-full"
+        scene="https://prod.spline.design/6pgQTKLMlpd6qqTy/scene.splinecode"
+      />
     </div>
   );
 };
