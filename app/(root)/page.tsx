@@ -5,7 +5,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      <div className="h-screen">
+      <div className="h-screen crt">
         <AboutMe />
       </div>
       <div>
